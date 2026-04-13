@@ -1,0 +1,13 @@
+category,distinct_calls,total_rows,customer_voice_ratio,avg_evidence,confidence,buyer
+Analytics & reporting,33,46,0.46,3.5,MEDIUM,EHS / Leadership
+Other,32,48,0.57,2.8,HIGH,—
+Coaching & action workflow,20,20,0.33,4.6,MEDIUM,EHS / Safety
+Operational flow & throughput,19,23,0.46,2.8,MEDIUM,Operations
+Platform & adoption,18,22,0.51,4.0,HIGH,IT / Program Mgmt
+Dock & door operations,12,14,0.52,2.2,HIGH,Facilities / Operations
+Integration & data export,12,14,0.64,3.4,HIGH,IT / Analytics
+Security & access control,11,13,0.56,2.6,HIGH,Facilities / Security
+Loss prevention & damage,10,10,0.63,2.7,HIGH,LP / Finance
+ROI & cost justification,9,11,0.59,3.4,HIGH,Finance / EHS
+Incident investigation,7,7,0.56,2.6,MEDIUM,—
+Food safety & controlled environment,3,3,0.0,1.3,LOW,QA / Compliance
