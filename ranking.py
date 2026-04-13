@@ -115,13 +115,14 @@ def rank_nonsafety(df):
     Returns a DataFrame with one row per non-safety category.
     """
     ns = df[df["bucket"] == "nonsafety"].copy()
+    ns["total_quotes"] = ns["voxel_quotes"] + ns["customer_quotes"]
 
     agg = ns.groupby("category").agg(
         distinct_calls=("file_id", "nunique"),
         total_rows=("label", "count"),
         avg_evidence=("evidence_count", "mean"),
         customer_quotes_sum=("customer_quotes", "sum"),
-        total_quotes_sum=("voxel_quotes", lambda x: x.sum() + ns.loc[x.index, "customer_quotes"].sum()),
+        total_quotes_sum=("total_quotes", "sum"),
     ).reset_index()
 
     # customer voice ratio across the whole category
