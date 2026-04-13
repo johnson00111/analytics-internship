@@ -115,7 +115,7 @@ def auto_cluster(labels, threshold=0.4):
     This is a rough first pass -- review and correct by hand.
     """
     token_sets = {lab: tokenize(lab) for lab in labels}
-    unique = list(set(labels))
+    unique = sorted(set(labels))
     parent = {lab: lab for lab in unique}
 
     def find(x):
