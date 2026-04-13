@@ -24,7 +24,7 @@ def load_all(data_dir="safety-nonsafety"):
         if not fname.endswith(".json"):
             continue
         path = os.path.join(data_dir, fname)
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             doc = json.load(f)
 
         file_id = fname.replace(".json", "")
